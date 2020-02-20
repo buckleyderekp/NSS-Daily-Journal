@@ -2,35 +2,29 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./scripts/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
-<body>
+<body class="main">
     <header>
         <h1>Daily Journal</h1>
     </header>
-    <form action="">
+    <form action="" class="form">
         <fieldset>
-            <label for="journalDate">Date of Entry</label>
+            <label for="journalDate">Date of Entry:</label>
             <input type="date" name="journalDate" id="journalDate">
         </fieldset>
-    </form>
-    <form action="">
         <fieldset>
-            <label for="conecptsCovered">Concepts Covered</label>
+            <label for="conecptsCovered">Concepts Covered:</label>
             <input type="text" name="conceptsCovered" id="conceptsCovered">
         </fieldset>
-    </form>
-    <form action="">
         <fieldset>
-            <label for="journalEntry">Journal Entry</label>
+            <label for="journalEntry">Journal Entry:</label>
             <input type="text" name="journalEntry" id="jounralEntry">
         </fieldset>
-    </form>
-    <form action="">
         <fieldset>
             <select name="moodOfTheDay" id="moodOfTheDay">
                 <option value="ecstatic">Ecstatic</option>
@@ -40,8 +34,6 @@
                 <option value="abyssOfDespair">Abyss of Despair</option>
             </select>
         </fieldset>
-    </form>
-    <form action="">
         <fieldset>
             <input type="submit" value="Record Journal Entry">
         </fieldset>

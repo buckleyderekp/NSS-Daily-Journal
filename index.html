@@ -8,8 +8,9 @@
     <title>Document</title>
 </head>
 
-<body class="main">
+<body >
     <header>
+        <div class="main">
         <h1>Daily Journal</h1>
     </header>
     <form action="" class="form">
@@ -23,7 +24,7 @@
         </fieldset>
         <fieldset>
             <label for="journalEntry">Journal Entry:</label>
-            <input type="text" name="journalEntry" id="jounralEntry">
+            <textarea name="journalEntry" id="journalEntry" cols="30" rows="5"></textarea>
         </fieldset>
         <fieldset>
             <select name="moodOfTheDay" id="moodOfTheDay">
@@ -34,11 +35,9 @@
                 <option value="abyssOfDespair">Abyss of Despair</option>
             </select>
         </fieldset>
-        <fieldset>
             <input type="submit" value="Record Journal Entry">
-        </fieldset>
     </form>
-
+</div>
 </body>
 
 </html>

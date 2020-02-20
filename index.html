@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <header><h1>Daily Journal</h1></header>
+    <header>
+        <h1>Daily Journal</h1>
+    </header>
     <form action="">
         <fieldset>
             <label for="journalDate">Date of Entry</label>
@@ -26,15 +30,23 @@
             <input type="text" name="journalEntry" id="jounralEntry">
         </fieldset>
     </form>
-    <fieldset>
-        <select name="moodOfTheDay" id="moodOfTheDay">
-            <option value="ecstatic">Ecstatic</option>
-            <option value="happy">Happy</option>
-            <option value="indifferent">Indifferent</option>
-            <option value="sad">Sad</option>
-            <option value="abyssOfDespair">Abyss of Despair</option>
-        </select>
+    <form action="">
+        <fieldset>
+            <select name="moodOfTheDay" id="moodOfTheDay">
+                <option value="ecstatic">Ecstatic</option>
+                <option value="happy">Happy</option>
+                <option value="indifferent">Indifferent</option>
+                <option value="sad">Sad</option>
+                <option value="abyssOfDespair">Abyss of Despair</option>
+            </select>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <input type="submit" value="Record Journal Entry">
+        </fieldset>
+    </form>
 
-    </fieldset>
 </body>
+
 </html>

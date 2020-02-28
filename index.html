@@ -2,36 +2,31 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
-<body>
+<body >
     <header>
+        <div class="main">
         <h1>Daily Journal</h1>
     </header>
-    <form action="">
-        <fieldset>
-            <label for="journalDate">Date of Entry</label>
+    <form action="" class="form">
+        <fieldset class= "fieldsets">
+            <label for="journalDate">Date of Entry:</label>
             <input type="date" name="journalDate" id="journalDate">
         </fieldset>
-    </form>
-    <form action="">
-        <fieldset>
-            <label for="conecptsCovered">Concepts Covered</label>
-            <input type="text" name="conceptsCovered" id="conceptsCovered">
+        <fieldset class="fieldsets">
+            <label for="conecptsCovered" class ="concepts">Concepts Covered:</label>
+            <input type="text" name="conceptsCovered" id="conceptsCovered" class ="concepts">
         </fieldset>
-    </form>
-    <form action="">
-        <fieldset>
-            <label for="journalEntry">Journal Entry</label>
-            <input type="text" name="journalEntry" id="jounralEntry">
+        <fieldset class="fieldsets">
+            <label for="journalEntry" class="journalEntry">Journal Entry:</label>
+            <textarea name="journalEntry" id="journalEntry" class = "journalEntry" cols="30" rows="5"></textarea>
         </fieldset>
-    </form>
-    <form action="">
-        <fieldset>
+        <fieldset class="fieldsets">
             <select name="moodOfTheDay" id="moodOfTheDay">
                 <option value="ecstatic">Ecstatic</option>
                 <option value="happy">Happy</option>
@@ -40,13 +35,14 @@
                 <option value="abyssOfDespair">Abyss of Despair</option>
             </select>
         </fieldset>
-    </form>
-    <form action="">
-        <fieldset>
             <input type="submit" value="Record Journal Entry">
-        </fieldset>
     </form>
+    <div id="entryLog">
 
+
+    </div>
+</div>
+<script type="module" src="./scripts/main.js"></script>
 </body>
 
 </html>

@@ -25,6 +25,12 @@ const journal = [
         concept: "hello world group project final",
         entry: "we played around with our hello world and tried key fram anumations",
         mood: "Indifferent"
+    },
+    {
+        date: "02/28/2020",
+        concept: "automating event listeners",
+        entry: "automated event listeners for martins aquarium also went out as a group friday evening and met some people from other cohorts",
+        mood: "Happy"
     }
 ]
 

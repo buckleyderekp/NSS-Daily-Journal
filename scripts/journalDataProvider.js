@@ -35,6 +35,27 @@ const journal = [
         concept: "automating event listeners",
         entry: "automated event listeners for martins aquarium also went out as a group friday evening and met some people from other cohorts",
         mood: "Happy"
+    },
+    {
+        id:5,
+        date: "03/02/2020",
+        concept: "ordering fish by length",
+        entry: "changed fish to be ordered by multiples of 3 then 5 and then everything else. Didn't get it to work before EOD",
+        mood: "Happy"
+    },
+    {
+        id: 6,
+        date: "03/03/2020",
+        concept: "classes cancelled",
+        entry: "Tornadoes",
+        mood: "Sad",
+    },
+    {
+        id: 7,
+        date: "03/04/2020",
+        concept: "Automating Hello World",
+        entry: "classes cancelled again but I cam in anyway. finished ordering the fish and used javascript to automate html for lists on country page",
+        mood: "Happy",
     }
 ]
 

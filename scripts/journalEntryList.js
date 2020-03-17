@@ -4,7 +4,7 @@
  *    there are items in the collection exposed by the
  *    data provider component
  */
-import { useJournalEntries } from "./journalDataProvider.js"
+import { useNotes } from "./journalDataProvider.js"
 import JournalEntryComponent from "./journalEntry.js"
 
 // DOM reference to where all entries will be rendered and stored in variable entryLog
@@ -12,7 +12,7 @@ const entryLog = document.querySelector("#entryLog")
 
 const EntryListComponent = () => {
     // storing function that returns array of entries sorted by date and storing in variable entries
-    const entries = useJournalEntries()
+    const entries = useNotes()
 //for of loop that runs through each object in the array (entry) now stored in entries
     for (const entry of entries) {
         /*

@@ -1,4 +1,10 @@
 .fieldsets {
     display: flex;
     flex-direction: column;
+    background-color: beige;
+    width: 250px;
+    justify-content: space-between;
 }
+
+
+

@@ -1,3 +1,5 @@
+import { saveNote } from "./journalDataProvider.js"
+
 const contentTargetJournalForm = document.querySelector(".container")
 
 const eventHub = document.querySelector(".container")
@@ -30,8 +32,8 @@ export const RenderJounralForm = () => {
         <option value="abyssOfDespair">Abyss of Despair</option>
     </select>
 </fieldset>
-    <input type="submit"  id = "saveJournalEntry" value="Record Journal Entry">
 </form>
+<button  id = "saveJournalEntry" value="Record Journal Entry">Record Journal Entry</button>
 </div>`
 }
 

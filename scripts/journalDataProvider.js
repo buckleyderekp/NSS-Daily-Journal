@@ -14,7 +14,7 @@ export const useNotes = () => {
 }
 
 export const saveNote = note => {
-    return fetch('http://localhost:8088/notes', {
+    return fetch('http://localhost:3000/journalEntries', {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

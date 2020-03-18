@@ -1,5 +1,9 @@
-import { useJournalEntries } from "./journalDataProvider.js";
-import EntryListComponent from  "./journalEntryList.js";
 
-useJournalEntries()
+import EntryListComponent from  "./journalEntryList.js";
+import { useNotes, getNotes } from "./journalDataProvider.js";
+import { RenderJounralForm } from "./JournalForm.js";
+
+
+getNotes().then(useNotes)
 EntryListComponent()
+RenderJounralForm()

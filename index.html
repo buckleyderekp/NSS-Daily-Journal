@@ -8,40 +8,10 @@
     <title>Document</title>
 </head>
 
-<body >
-    <header>
-        <div class="main">
-        <h1>Daily Journal</h1>
-    </header>
-    <form action="" class="form">
-        <fieldset class= "fieldsets">
-            <label for="journalDate">Date of Entry:</label>
-            <input type="date" name="journalDate" id="journalDate">
-        </fieldset>
-        <fieldset class="fieldsets">
-            <label for="conecptsCovered" class ="concepts">Concepts Covered:</label>
-            <input type="text" name="conceptsCovered" id="conceptsCovered" class ="concepts">
-        </fieldset>
-        <fieldset class="fieldsets">
-            <label for="journalEntry" class="journalEntry">Journal Entry:</label>
-            <textarea name="journalEntry" id="journalEntry" class = "journalEntry" cols="30" rows="5"></textarea>
-        </fieldset>
-        <fieldset class="fieldsets">
-            <select name="moodOfTheDay" id="moodOfTheDay">
-                <option value="ecstatic">Ecstatic</option>
-                <option value="happy">Happy</option>
-                <option value="indifferent">Indifferent</option>
-                <option value="sad">Sad</option>
-                <option value="abyssOfDespair">Abyss of Despair</option>
-            </select>
-        </fieldset>
-            <input type="submit" value="Record Journal Entry">
-    </form>
+<body class="container">
+
     <div id="entryLog">
-
-
     </div>
-</div>
 <script type="module" src="./scripts/main.js"></script>
 </body>
 

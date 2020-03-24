@@ -1,5 +1,14 @@
 let notes = []
 
+ const eventHub = document.querySelector(".container")
+
+const dispatchStateChangeEvent = () => {
+    const noteStateChangedEvent = new CustomEvent("noteStateChanged")
+
+    eventHub.dispatchEvent(noteStateChangedEvent)
+}
+
+
 export const getNotes = () => {
     return fetch('http://localhost:3000/journalEntries')
         .then(response => response.json())

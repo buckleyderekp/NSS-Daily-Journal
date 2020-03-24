@@ -13,6 +13,10 @@ const eventHub = document.querySelector(".container")
 
 let visibility = false
 
+eventHub.addEventListener("noteStateChanged", customEvent => {
+    renderNotes()
+})
+
 eventHub.addEventListener("allEntriesClicked", customEvent => {
     visibility = !visibility
 

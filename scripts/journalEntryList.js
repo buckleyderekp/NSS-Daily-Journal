@@ -8,9 +8,29 @@ import { useNotes } from "./journalDataProvider.js"
 import JournalEntryComponent from "./journalEntry.js"
 
 // DOM reference to where all entries will be rendered and stored in variable entryLog
-const entryLog = document.querySelector("#entryLog")
+const contentTarget = document.querySelector(".entryLog")
+const eventHub = document.querySelector(".container")
 
-const EntryListComponent = () => {
+let visibility = false
+
+eventHub.addEventListener("allEntriesClicked", customEvent => {
+    visibility = !visibility
+
+    if (visibility) {
+        contentTarget.classList.remove("invisible")
+    }
+    else {
+        contentTarget.classList.add("invisible")
+    }
+})
+
+const renderNotes = () => {
+    if (visibility) {
+        contentTarget.classList.remove("invisible")
+    }
+    else {
+        contentTarget.classList.add("invisible")
+    }
     // storing function that returns array of entries sorted by date and storing in variable entries
     const entries = useNotes()
 //for of loop that runs through each object in the array (entry) now stored in entries
@@ -22,10 +42,12 @@ const EntryListComponent = () => {
         const logHTMLRepresentation = JournalEntryComponent(entry)
         //takes DOM node now stored in entryLog and converts to html adding a new object from the array taken
         //from logHTMLRepresentation running through each object
-        entryLog.innerHTML += logHTMLRepresentation
+        contentTarget.innerHTML += logHTMLRepresentation
     }
 }
     
 
 
-export default EntryListComponent   
+export const EntriesList = () => {
+    renderNotes()
+} 

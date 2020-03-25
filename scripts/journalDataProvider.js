@@ -33,3 +33,11 @@ export const saveNote = note => {
     .then(getNotes)
     .then(dispatchStateChangeEvent)
 }
+
+export const deleteEntry = entryId => {
+    return fetch(`http://localhost:3000/journalEntries/${entryId}`, {
+        method: "DELETE"
+    })
+        .then(getNotes)
+        .then(dispatchStateChangeEvent)
+}

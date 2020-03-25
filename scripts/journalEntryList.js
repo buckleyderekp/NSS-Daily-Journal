@@ -4,8 +4,9 @@
  *    there are items in the collection exposed by the
  *    data provider component
  */
-import { useNotes } from "./journalDataProvider.js"
+import { useNotes, deleteEntry } from "./journalDataProvider.js"
 import JournalEntryComponent from "./journalEntry.js"
+
 
 // DOM reference to where all entries will be rendered and stored in variable entryLog
 const contentTarget = document.querySelector(".entryLog")
@@ -14,8 +15,17 @@ const eventHub = document.querySelector(".container")
 let visibility = false
 
 eventHub.addEventListener("noteStateChanged", customEvent => {
-    renderNotes()
+    contentTarget.innerHTML= ""
+    EntriesList()
 })
+
+contentTarget.addEventListener("click", clickEvent => {
+    if (clickEvent.target.id.startsWith("deleteEntry--")) {
+        const [prefix, entryId] = clickEvent.target.id.split("--")
+        deleteEntry(entryId)
+    }
+})
+
 
 eventHub.addEventListener("allEntriesClicked", customEvent => {
     visibility = !visibility

@@ -5,13 +5,13 @@
 const JournalEntryComponent = (entry) => {
     return `
         <section id="entry--${entry.date}" class="journalEntry">
-        <br>
-        date: ${entry.date}<br>
-        concept: ${entry.concept}<br>
-        entry: ${entry.entry}<br>
-        mood: ${entry.mood}<br>
-        <br>
-
+        <p> date: ${entry.date}</p>
+        <p> concept: ${entry.concept} </p>
+        <p> entry: ${entry.entry}</p>
+        <p> mood: ${entry.mood}</p>
+        <p>
+        <button id="deleteEntry--${entry.id}">Delete This Entry</button>
+        </p>
         </section>
     `
 }

@@ -1,13 +1,6 @@
 {
   "journalEntries": [
     {
-      "id": 1,
-      "date": "07/24/2025",
-      "concept": "Test",
-      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-      "mood": "Ecstatic"
-    },
-    {
       "id": 2,
       "date": "02/27/2020",
       "concept": "automating html rendering using javascript",
@@ -48,34 +41,6 @@
       "concept": "Automating Hello World",
       "entry": "classes cancelled again but I cam in anyway. finished ordering the fish and used javascript to automate html for lists on country page",
       "mood": "Happy"
-    },
-    {
-      "date": "",
-      "concept": "all the stuff",
-      "entry": "please work",
-      "mood": "ecstatic",
-      "id": 8
-    },
-    {
-      "date": "2020-03-18",
-      "concept": "stuff",
-      "entry": "stuff",
-      "mood": "ecstatic",
-      "id": 9
-    },
-    {
-      "date": "2020-03-24",
-      "concept": "Deleting notes from api",
-      "entry": "watched steve live code some and implemented it in to glassdale\nworked on daily journal so it should be mostly up to date. Tomorrow I will try to get functionality to delete journal entries",
-      "mood": "indifferent",
-      "id": 10
-    },
-    {
-      "date": "2020-03-24",
-      "concept": "see if this works now",
-      "entry": "please work",
-      "mood": "ecstatic",
-      "id": 11
     }
   ]
 }
